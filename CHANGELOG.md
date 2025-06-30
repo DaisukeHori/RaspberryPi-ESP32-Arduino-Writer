@@ -1,48 +1,48 @@
-# Changelog
+# 変更履歴
 
-All notable changes to this project will be documented in this file.
+このプロジェクトの注目すべき変更はすべてこのファイルに記録されます。
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+フォーマットは [Keep a Changelog](https://keepachangelog.com/ja/1.0.0/) に基づいており、
+このプロジェクトは [セマンティック バージョニング](https://semver.org/lang/ja/) に準拠しています。
 
-## [Unreleased]
+## [未リリース]
 
-### Added
-- Basic test structure and test files
+### 追加
+- 基本的なテスト構造とテストファイル
 
 ## [1.0.0] - 2025-06-30
 
-### Added
-- Initial release of ESP32 Writer system
-- USB memory detection and automatic sketch loading
-- Arduino CLI integration for building sketches
-- esptool.py integration for flashing ESP32 devices
-- 4-LED status indication system (Red=Error, Green=Ready, Orange=Processing, Blue=Complete)
-- OLED/TFT display support for progress visualization
-- Hardware button control interface
-- Multiple sketch selection functionality
-- USB Mass Storage gadget functionality
-- External library auto-installation support
-- Direct binary file flashing support
-- Comprehensive logging system
-- Configuration files for boards and UI settings
-- systemd service integration
-- Installation and setup scripts
+### 追加
+- ESP32 Writer システムの初回リリース
+- USB メモリの検出と自動スケッチロード機能
+- Arduino CLI 統合によるスケッチビルド機能
+- esptool.py 統合による ESP32 デバイスへの書き込み機能
+- 4色LED ステータス表示システム（赤=エラー、緑=待機、橙=処理中、青=完了）
+- OLED/TFT ディスプレイによる進捗表示機能
+- ハードウェアボタンによる操作インターフェース
+- 複数スケッチ選択機能
+- USB Mass Storage ガジェット機能
+- 外部ライブラリ自動インストール機能
+- ビルド済みバイナリファイルの直接書き込み機能
+- 包括的なログシステム
+- ボードと UI 設定用の設定ファイル
+- systemd サービス統合
+- インストールとセットアップ用スクリプト
 
-### Features
-- Supports ESP32 and ESP32-S3 boards
-- Automatic board type detection from sketch files
-- Priority-based sketch sorting (newer .ino files prioritized)
-- Read-only protection during flashing operations
-- Graceful error handling and recovery
-- Modular architecture with clear separation of concerns
+### 機能
+- ESP32 および ESP32-S3 ボードをサポート
+- スケッチファイルからの自動ボードタイプ検出
+- 優先度ベースのスケッチソート（新しい .ino ファイルを優先）
+- 書き込み操作中の読み取り専用保護
+- 優雅なエラー処理とリカバリ
+- 明確な責務分離によるモジュラーアーキテクチャ
 
-### Hardware Support
+### ハードウェアサポート
 - Raspberry Pi Zero 2 W
 - Raspberry Pi 4 Model B
-- I2C OLED displays (SSD1306)
-- SPI TFT displays (ILI9341)
-- HDMI display output
-- USB-Serial converters (CP2102/CH340)
+- I2C OLED ディスプレイ (SSD1306)
+- SPI TFT ディスプレイ (ILI9341)
+- HDMI ディスプレイ出力
+- USB-Serial 変換器 (CP2102/CH340)
 
 [1.0.0]: https://github.com/RooLab/esp32-writer/releases/tag/v1.0.0
