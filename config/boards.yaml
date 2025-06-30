@@ -1,0 +1,26 @@
+# ESP32 ボード設定
+boards:
+  esp32:
+    fqbn: "esp32:esp32:esp32"
+    upload_speed: 921600
+    reset_method: "dtr_rts"  # dtr_rts または gpio
+    
+  esp32s3:
+    fqbn: "esp32:esp32:esp32s3"
+    upload_speed: 921600
+    reset_method: "dtr_rts"
+
+# GPIO設定（reset_method: gpio の場合）
+gpio:
+  reset_pin: 23  # EN pin
+  boot_pin: 24   # IO0 pin
+
+# シリアル設定
+serial:
+  baudrate: 115200
+  timeout: 10
+  
+# 自動検出設定
+auto_detect:
+  board_priority: ["esp32", "esp32s3"]
+  default_board: "esp32"

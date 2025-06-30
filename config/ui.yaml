@@ -1,0 +1,36 @@
+# UI設定
+display:
+  type: "oled"  # oled, tft, hdmi
+  width: 128
+  height: 64
+  i2c_address: 0x3C  # OLED用
+  
+# LED設定
+leds:
+  red: 17
+  green: 27
+  orange: 22
+  blue: 5
+  
+# ボタン設定
+button:
+  pin: 6
+  pull_up: true
+  short_press_time: 0.1  # 秒
+  long_press_time: 2.0   # 秒
+  
+# タイムアウト設定
+timeouts:
+  selection_timeout: 30  # スケッチ選択タイムアウト（秒）
+  build_timeout: 300     # ビルドタイムアウト（秒）
+  flash_timeout: 60      # フラッシュタイムアウト（秒）
+
+# メッセージ設定
+messages:
+  standby: "Ready - Insert USB"
+  usb_detected: "USB Detected"
+  selecting: "Select Sketch"
+  building: "Building..."
+  flashing: "Flashing..."
+  complete: "Success!"
+  error: "Error occurred"
